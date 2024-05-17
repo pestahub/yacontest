@@ -6,7 +6,9 @@ using namespace std;
 
 class Solution {
  public:
-  int longestIncreasingPath(int n, int m, const vector<vector<int>>& matrix) {
+  int longestIncreasingPath(vector<vector<int>>& matrix) {
+    int n = matrix.size();
+    int m = matrix[0].size();
     vector<vector<int>> dp(n, vector<int>(m, -1));
 
     int max_path = 0;
